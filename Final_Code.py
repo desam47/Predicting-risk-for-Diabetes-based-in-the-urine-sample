@@ -314,7 +314,7 @@ param_grid = {'C': [0.1,1, 10, 100, 1000], 'gamma': [1,0.1,0.01,0.001,0.0001], '
 
 from sklearn.model_selection import GridSearchCV
 
-grid = GridSearchCV(SVC(probability=True),param_grid,refit=True,verbose=3, cv=5)
+grid = GridSearchCV(SVC(probability=True),param_grid,refit=True,verbose=3, cv=3)
 
 grid.fit(X_train,y_train)
 
