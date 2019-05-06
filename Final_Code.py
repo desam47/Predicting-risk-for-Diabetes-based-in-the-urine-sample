@@ -99,6 +99,10 @@ X_train, X_test, y_train, y_test = train_test_split(XR,YR,random_state=0)
 
 X_train.shape
 
+print('Train set:', X_train.shape, y_train.shape)
+print('Test set:', X_test.shape, y_test.shape)
+
+
 #Model creation:
 
 
@@ -293,7 +297,7 @@ plt.ylabel('Features')
 plt.xlabel('Importance');
 
 
-# SVM
+#4 SVM
 
 #Train the Support Vector Classifier
 from sklearn.svm import SVC
@@ -349,29 +353,6 @@ plt.ylabel('True Positive Rate')
 plt.title('ROC Curve: SVM')
 plt.legend(loc="lower right")
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
